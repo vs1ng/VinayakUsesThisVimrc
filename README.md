@@ -131,4 +131,3 @@ This `.vimrc` configuration is designed to enhance your Vim experience by provid
 
 ---
 
-You can save this content in a file named `README.md` or `README.txt` in the same directory as your `.vimrc` file. If you have any specific requirements or additional information you'd like to include,
