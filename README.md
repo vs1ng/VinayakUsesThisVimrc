@@ -1,4 +1,3 @@
-Certainly! Below is a sample README file that explains the purpose and configuration of your `.vimrc` settings. You can customize it further based on your preferences.
 
 ---
 
