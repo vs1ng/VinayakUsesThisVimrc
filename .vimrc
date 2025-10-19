@@ -53,7 +53,7 @@ nnoremap <C-L> <C-W><C-L>                    " Move to split right
 nnoremap <C-H> <C-W><C-H>                    " Move to split left
 nnoremap <C-z> :undo<CR>     " Undo with Ctrl+z
 nnoremap <C-y> :redo<CR>     " Redo with Ctrl+y
-set cmdheight=2       " Increase command line height
+set cmdheight=2       " Increse command line height
 set backspace=indent,eol,start
 " File explorer on the right - automatically on staFirtup
 autocmd VimEnter * vertical rightbelow 20 Vex!
