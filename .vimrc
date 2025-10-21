@@ -36,7 +36,7 @@ set expandtab      " Convert tabs to spaces
 set visualbell      " Use visual bell instead of beeping
 filetype plugin indent on
 set statusline=%f\ %y\ %m\ %r\ %=%-14.(%l,%c%V%)\ %P
-colorscheme test
+colorscheme chromaglass
 set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20
 set hlsearch          " Highlight search results
 set incsearch         " Show search matches as you type
