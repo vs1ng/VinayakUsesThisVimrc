@@ -1,11 +1,34 @@
+
 call plug#begin('~/.vim/plugged')
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 call plug#end()
-
 set number          " Show line numbersco
-set laststatus=2    " Always show the status line
+set laststatus=0    " Always show the status line
+" --- Status Line & Tab Line Configuration ---
+" Make the tabline always visible
+set showtabline=2
+" Custom tabline configuration: File information at the top
+" %t: Tab page label (defaults to a list of window buffers)
+" %f: Full path of the current buffer in the current window
+" %=: Separator to right-align items
+" %l: Current line number
+" %c: Current column number
+" %P: Percentage through the file
+set tabline=%!MyTabLine()
+function! MyTabLine()
+    let s = ''
+    for i in range(tabpagenr('$'))
+        " Tab page label
+        let tab = ' %' . (i + 1) . 'T '
+        let s .= tab
+    endfor
+    let s .= '%T' " Switch to current tab page
+    " Active window's status in the tabline
+    let s .= ' %f %y %m %r '
+    let s .= '%=' " Right align everything after this
+    let s .= '%l,%c %P'
+    return s
+endfunction
 syntax on          " Enable syntax highlighting
 set tabstop=4      " Set tab width to 4 spaces
 set shiftwidth=4    " Set indentation width to 4 spaces
@@ -13,7 +36,7 @@ set expandtab      " Convert tabs to spaces
 set visualbell      " Use visual bell instead of beeping
 filetype plugin indent on
 set statusline=%f\ %y\ %m\ %r\ %=%-14.(%l,%c%V%)\ %P
-colorscheme slate
+colorscheme test
 set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20
 set hlsearch          " Highlight search results
 set incsearch         " Show search matches as you type
