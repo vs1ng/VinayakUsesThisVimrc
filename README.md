@@ -3,6 +3,9 @@
 
 # Vim Configuration README
 
+## Preview
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/cc2065cb-4ce5-411d-9dfb-b7f179e025bc" />
+
 ## Overview
 
 This README provides an overview of the custom Vim configuration settings defined in the `.vimrc` file. These settings enhance the usability and appearance of Vim, making it more user-friendly and efficient for coding and text editing.
